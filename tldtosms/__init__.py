@@ -1,0 +1,2 @@
+ALL = ()
+VERSION = 0.1
