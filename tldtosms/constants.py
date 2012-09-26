@@ -1,6 +1,9 @@
 ''' This file is here to help out with ... '''
-import sys, os
+import os
 
+### PACKAGE-WIDE CONSTANTS ###
+
+PACKAGE_VERSION = '0.1.0.3'
 
 ### SYNCRONIZATION CONSTANTS ###
 
@@ -18,3 +21,6 @@ SYNC_DIFF_FILE = os.path.join(os.path.dirname(__file__), 'data', 'tlds_diff.dat'
 SYNC_MIN_UPDATE_INTERVAL = 300 
 
 ### TELAPI CONSTANTS ###
+
+# When the new TLD is being applied to the sync data url above
+SMS_NEW_TLD   = "New TLD '%s' is now available!"

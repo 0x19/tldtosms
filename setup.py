@@ -1,10 +1,10 @@
-from distutils.core import setup
 import os
-from tldtosms import VERSION
+from   distutils.core import setup
+from   tldtosms import constants
 
 setup(
     name                = "tldtosms",
-    version             = VERSION,
+    version             = constants.PACKAGE_VERSION,
     description         = "",
     author              = "Nevio Vesic",
     author_email        = "nevio.vesic@gmail.com",
