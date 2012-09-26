@@ -11,7 +11,7 @@ setup(
     url                 = "https://github.com/0x19/tldtosms/",
     keywords            = ["telapi", "sms", "telephony", "python", "top-level", "tld", "sld", "domains", "whois"],
     install_requires    = ["requests", "telapi", "difflib"],
-    packages            = ['tldtosms', 'tldtosms.sync', 'tldtosms.exceptions', 'tldtosms.settings'],
+    packages            = ['tldtosms', 'tldtosms.sync', 'tldtosms.exceptions'],
     package_data        = {'tldtosms': ['data/*.dat', 'data/*.json']},
     classifiers         = [
         "Programming Language :: Python",

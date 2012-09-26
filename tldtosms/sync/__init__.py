@@ -1,5 +1,5 @@
 import sys, os, logging, time, datetime, urllib
-from tldtosms import exceptions, constants, settings
+from tldtosms import exceptions, constants
 
 class Updater(object):
 
