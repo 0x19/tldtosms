@@ -1,6 +1,8 @@
 ### Welcome to TLD to SMS
 TLD to SMS is a python package designed to help you with new TLDs. Package will send SMS message once new TLD becomes public to the destination number you provide. It can be any US or International number like your cell phone.
 
+For those who don't know, TLD is Top-Level Domain. TLD is ".com, .net, .biz, .org, .us, ..."
+
 #### Requirements
 
 - You need to have [TelAPI account](http://telapi.com)
