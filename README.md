@@ -1,5 +1,5 @@
 ### Welcome to TLD to SMS
-TLD to SMS is a python package designed to help you with being notified on new TLD as soon as TLD becomes public. How plugin notifies you is by sending SMS message to your mobile phone or any other number that you provide.
+TLD to SMS is a python package designed to help you with new TLDs. Package will send SMS message once new TLD becomes public to the destination number you provide. It can be any US or International number like your cell phone.
 
 #### Requirements
 
@@ -50,6 +50,7 @@ tts_connect = Connect(
 - `cache_file`         : Just path to `.dat` file where we can cache stuff out
 
 **4.) Save the example `run_on_demand.py` and run it**
+
 It's pretty easy to run the file now. Just do:
 
 ```shell
