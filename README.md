@@ -20,7 +20,7 @@ $ python setup.py install
 #### By PIP
 
 ```shell
-$ not available for now - will register it soon
+$ pip install tldtosms
 ```
 
 ### Step by step installation
