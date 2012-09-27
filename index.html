@@ -13,14 +13,14 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <title>Tldtosms by 0x19</title>
+    <title>TLD to SMS by 0x19</title>
   </head>
 
   <body>
     <header>
       <div class="inner">
-        <h1>Tldtosms</h1>
-        <h2>Notify yourself by SMS when new TLD is registered</h2>
+        <h1>TLD to SMS</h1>
+        <h2>Notify yourself by SMS when new TLD becomes available</h2>
         <a href="https://github.com/0x19/tldtosms" class="button"><small>View project on</small>GitHub</a>
       </div>
     </header>
@@ -30,7 +30,7 @@
         <section id="main-content">
           <h3>Welcome to TLD to SMS</h3>
 
-<p>TldToSms is a python package which is designed to help you with being notified on new TLD as soon as it becomes public. How plugin notifies you is by sending SMS message to your mobile phone.</p>
+<p>TLD to SMS is a python package designed to help you with being notified on new TLD as soon as TLD becomes public. How plugin notifies you is by sending SMS message to your mobile phone or any other number that you provide.</p>
 
 <h4>Requirements</h4>
 
@@ -48,17 +48,62 @@
 
 <h4>By PIP</h4>
 
-<div class="highlight"><pre>
+<div class="highlight"><pre><span class="nv">$ </span>not available <span class="k">for </span>now - will register it soon
 </pre></div>
 
-<h3>Support or Contact</h3>
+<h3>Step by step installation</h3>
+
+<p><strong>1.) Run the package installation</strong>
+You can choose one of the approaches defined above.  </p>
+
+<p>*<em>2.) navigate yourself to examples *</em>
+You can find them exactly <a href="https://github.com/0x19/tldtosms/tree/master/examples">here</a></p>
+
+<p><strong>3.) Open <code>run_on_demand.py</code> example and modify following code</strong></p>
+
+<div class="highlight"><pre><span class="n">tts_connect</span> <span class="o">=</span> <span class="n">Connect</span><span class="p">(</span>
+    <span class="n">telapi_account_sid</span> <span class="o">=</span> <span class="s">'account_sid'</span><span class="p">,</span>
+    <span class="n">telapi_auth_token</span>  <span class="o">=</span> <span class="s">'auth_token'</span><span class="p">,</span>
+    <span class="n">from_address</span>       <span class="o">=</span> <span class="s">'from_e164_number'</span><span class="p">,</span>
+    <span class="n">to_address</span>         <span class="o">=</span> <span class="s">'to_e164_number'</span><span class="p">,</span>
+    <span class="n">cache_file</span>         <span class="o">=</span> <span class="s">'/full/path/to/tldtosms_cache.dat'</span>
+<span class="p">)</span>
+</pre></div>
+
+<ul>
+<li>
+<code>telapi_account_sid</code> : Can be found at <a href="https://telapi.com/dashboard">TelAPI Dashboard</a>
+</li>
+<li>
+<code>telapi_auth_token</code>  : Can be found at <a href="https://telapi.com/dashboard">TelAPI Dashboard</a>
+</li>
+<li>
+<code>from_address</code>       : You need to own <a href="https://www.telapi.com/numbers/">TelAPI Number</a>
+</li>
+<li>
+<code>to_address</code>         : Your mobile phone number in E.164 format ( e.g. +1 555 555 5555 )</li>
+<li>
+<code>cache_file</code>         : Just path to <code>.dat</code> file where we can cache stuff out</li>
+</ul><p><strong>4.) Save the example <code>run_on_demand.py</code> and run it</strong>
+It's pretty easy to run the file now. Just do:</p>
+
+<div class="highlight"><pre>python run_on_demand.py
+</pre></div>
+
+<p><strong>And that's it :) For more details about usage please wait for me or contact me by:</strong></p>
+
+<h3>Need more info?</h3>
+
+<p>Create new <a href="https://github.com/0x19/tldtosms/issues">Github ticket</a> and I'll make sure it gets solved ASAP!</p>
+
+<h3>Contact</h3>
 
 <p>You can always reach me at few places :)</p>
 
-<p>E-mail:   <a href="mailto:nevio.vesic@gmail.com">nevio.vesic@gmail.com</a>
-Facebook: <a href="https://www.facebook.com/noxten">https://www.facebook.com/noxten</a>
-Linkedin: <a href="http://www.linkedin.com/in/neviovesic">http://www.linkedin.com/in/neviovesic</a>
-Twitter:  <a href="https://twitter.com/vesicnevio">https://twitter.com/vesicnevio</a></p>
+<p><strong>E-mail:</strong>   <a href="mailto:nevio.vesic@gmail.com">nevio.vesic@gmail.com</a> - 
+<strong>Facebook:</strong> <a href="https://www.facebook.com/noxten">https://www.facebook.com/noxten</a> - 
+<strong>Linkedin:</strong> <a href="http://www.linkedin.com/in/neviovesic">http://www.linkedin.com/in/neviovesic</a> - 
+<strong>Twitter:</strong>  <a href="https://twitter.com/vesicnevio">https://twitter.com/vesicnevio</a></p>
         </section>
 
         <aside id="sidebar">
@@ -78,6 +123,16 @@ Twitter:  <a href="https://twitter.com/vesicnevio">https://twitter.com/vesicnevi
       </div>
     </div>
 
-  
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-35148228-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
   </body>
 </html>
