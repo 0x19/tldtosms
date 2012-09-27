@@ -71,7 +71,3 @@ You can always reach me at few places :)
 **Facebook:** https://www.facebook.com/noxten - 
 **Linkedin:** http://www.linkedin.com/in/neviovesic - 
 **Twitter:**  https://twitter.com/vesicnevio
-
-
-
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">TLD to SMS</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://0x19.github.com/tldtosms/" rel="dct:source">http://0x19.github.com/tldtosms/</a>.
