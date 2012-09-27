@@ -10,8 +10,8 @@ PACKAGE_VERSION = '0.1.0.4'
 # Here the latest TLD list can be found. It's DAT file so we will need to 
 SYNC_DATA_URL = 'http://mxr.mozilla.org/mozilla-central/source/netwerk/dns/effective_tld_names.dat?raw=1'
 
-# Every 5 minutes is the minimum. You can't request update sooner
-SYNC_MIN_UPDATE_INTERVAL = 300 
+# Every 30 seconds lock on update
+SYNC_MIN_UPDATE_INTERVAL = 30
 
 ### TELAPI CONSTANTS ###
 

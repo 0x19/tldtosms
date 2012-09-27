@@ -27,11 +27,11 @@ class Updater(object):
 
     def _attempt_to_update(self):
 
-        url_handler = urllib.urlopen(self.update_data_url)
-        buffer_data = url_handler.read()
-
         if not self.update_allowed(): return False
 
+        url_handler = urllib.urlopen(self.update_data_url)
+        buffer_data = url_handler.read()
+        
         # Do this only in case that document status is OK and if update is allowed ...
         if url_handler.getcode() >= 200 and url_handler.getcode() < 300:
 
