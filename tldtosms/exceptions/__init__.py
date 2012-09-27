@@ -51,3 +51,13 @@ class CacheHandlerError(Exception):
         self.message    = self.message
         self.error_code = error_code
         self.http_code  = http_code
+
+
+class CacheFileError(Exception):
+    message = "Please pass cache_file when instantiating TldToSms. cache_file must be full path to .dat file where TldToSms can read and write data!"
+
+    def __init__(self, error_code=None, http_code=None):
+        Exception.__init__(self, self.message)
+        self.message    = self.message
+        self.error_code = error_code
+        self.http_code  = http_code

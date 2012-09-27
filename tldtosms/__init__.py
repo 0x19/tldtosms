@@ -37,7 +37,7 @@ class Connect(object):
         try:
             self.cache_handler = open(self.cache_file, 'r+w')
         except Exception as e:
-            raise exceptions.CacheHandlerError()
+            raise exceptions.CacheFileError()
 
         if type(self.cache_handler) is not file:
             raise exceptions.CacheHandlerError()
@@ -69,21 +69,3 @@ class Connect(object):
 
     def get_sent_smss(self):
         return self.sent_messages
-
-
-if __name__ == '__main__':
-    tts_connect = Connect(
-        telapi_account_sid = 'ACadea151d708d45febbbb5104c98977ca',
-        telapi_auth_token  = '096353c24f3845678de1f5f5f5a7d694',
-        from_address       = '(732) 733 6676',
-        to_address         = '+385994512444',
-        #to_address         = '+385915256970',
-        cache_file         = os.path.join(os.path.dirname(__file__), 'data', 'tlds_current.dat')
-    )
-
-    # In case that update is available, loop throu and Send SMS messages
-    if tts_connect.is_update_available():
-        tts_connect.send_sms()
-
-        for sms in tts_connect.get_sent_smss():
-            print "SMS that is sent: %s" % sms.sid
