@@ -46,7 +46,7 @@ tts_connect = Connect(
 - `telapi_account_sid` : Can be found at [TelAPI Dashboard](https://telapi.com/dashboard)
 - `telapi_auth_token`  : Can be found at [TelAPI Dashboard](https://telapi.com/dashboard)
 - `from_address`       : You need to own [TelAPI Number](https://www.telapi.com/numbers/)
-- `to_address`         : Your mobile phone number in E.164 format ( e.g. +1 555 555 5555 )
+- `to_address`         : Your mobile phone number in E.164 format e.g. +1 555 555 5555
 - `cache_file`         : Just path to `.dat` file where we can cache stuff out
 
 **4.) Save the example `run_on_demand.py` and run it**
