@@ -24,10 +24,12 @@ $ not available for now - will register it soon
 ### Step by step installation
 
 **1.) Run the package installation**
+
 You can choose one of the approaches defined above.  
 
-**2.) navigate yourself to examples **
-You can find them exactly [here](https://github.com/0x19/tldtosms/tree/master/examples)
+**2.) navigate yourself to examples**
+
+You can find them at [TLD to SMS Examples](https://github.com/0x19/tldtosms/tree/master/examples)
 
 **3.) Open `run_on_demand.py` example and modify following code**
 
