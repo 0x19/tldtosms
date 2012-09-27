@@ -1,0 +1,20 @@
+import sys,os
+
+from tldtosms import Connect
+
+# Lets initialize tldtosms
+
+tts_connect = Connect(
+    telapi_account_sid = 'account_sid',
+    telapi_auth_token  = 'auth_token',
+    from_address       = 'from_e164_number',
+    to_address         = 'to_e164_number',
+    cache_file         = os.path.join(os.path.dirname(__file__), 'data', 'tlds_current.dat')
+)
+
+# In case that update is available, loop throu and Send SMS messages
+if tts_connect.is_update_available():
+    tts_connect.send_sms()
+
+    for sms in tts_connect.get_sent_smss():
+    	print "SMS that is sent: %s" % sms.sid

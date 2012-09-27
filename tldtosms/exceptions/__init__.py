@@ -41,3 +41,13 @@ class DestinationAddressError(Exception):
         self.message    = self.message
         self.error_code = error_code
         self.http_code  = http_code
+
+
+class CacheHandlerError(Exception):
+    message = "Please pass cache_handler when instantiating TldToSms. cache_handler must be type of read/write file handler."
+
+    def __init__(self, error_code=None, http_code=None):
+        Exception.__init__(self, self.message)
+        self.message    = self.message
+        self.error_code = error_code
+        self.http_code  = http_code
